@@ -1,0 +1,159 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #ccc;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+}
+
+.banner .overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured article {
+  margin: 20px;
+  width: 300px;
+}
+
+.featured img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.featured .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.featured .description {
+  font-size: 14px;
+  color: #666;
+}
+
+.featured .price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f00;
+}
+
+ Call-to-Action {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ Call-to-Action:hover {
+  background-color: #555;
+}
+
+ Call-to-Action:active {
+  background-color: #444;
+}
+
+ Call-to-Action:focus {
+  outline: none;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .featured article {
+    margin: 10px;
+    width: 200px;
+  }
+}
